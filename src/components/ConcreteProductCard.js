@@ -1,5 +1,6 @@
 // src/components/ConcreteProductCard.js
 import Image from "next/image";
+import Link from "next/link";
 
 const ConcreteProductCard = ({ product }) => {
   return (
@@ -12,10 +13,9 @@ const ConcreteProductCard = ({ product }) => {
           className="object-contain p-4"
         />
       </div>
-
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-        <p className="text-gray-600 mb-4">{product.description}</p>
+        {/* <p className="text-gray-600 mb-4">{product.description}</p> */}
 
         {/* Specifications Table */}
         <div className="mb-6">
@@ -47,15 +47,13 @@ const ConcreteProductCard = ({ product }) => {
           </div>
         )}
 
-        {/* Price Information */}
-        <div className="mt-6 pt-4 border-t border-gray-200">
-          <div className="flex justify-between items-center">
-            <span className="text-gray-600">Cena za meter:</span>
-            <span className="text-xl font-bold">
-              {product.specifications.pricePerMeter.value} €/m
-            </span>
-          </div>
-        </div>
+        {/* View Details Button */}
+        <Link
+          href={`/products/${product.id}`}
+          className="mt-6 block w-full text-center bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+        >
+          Zobraziť detaily produktu
+        </Link>
       </div>
     </div>
   );

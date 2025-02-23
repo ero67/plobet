@@ -2,38 +2,106 @@
   "categories": [
     {
       "id": "concrete-products",
-      "name": "Betónové výrobky",
-      "name_en": "Concrete Products",
+      "name": "Striešky na múry",
       "products": [
         {
           "id": "strieska-murova-dvojstranna",
           "name": "Strieška múrová dvojstranná",
           "name_en": "Double-sided Wall Coping",
-          "description": "Dvojstranná betónová strieška na múry, ideálna pre zakrytie a ochranu múrov",
-          "description_en": "Double-sided concrete wall coping, ideal for covering and protecting walls",
+          "description": "Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
           "imageUrl": "/products/strieska_murova_dvojstranna.jpg",
           "specifications": {
-            "width": {
-              "value": 30,
-              "unit": "cm",
-              "label": "Šírka/Width"
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
             },
-            "length": {
-              "value": 100,
-              "unit": "cm",
-              "label": "Štandardná dĺžka/Standard Length"
-            },
-            "height": {
-              "value": 6,
-              "unit": "cm",
-              "label": "Výška/Height"
-            },
-            "pricePerMeter": {
-              "value": 5,
-              "unit": "€/m",
-              "label": "Cena za meter/Price per meter"
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
             }
           },
+          "sizeTable": [
+            {
+              "width": 20,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 12.5
+            },
+            {
+              "width": 25,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 13.5
+            },
+            {
+              "width": 30,
+              "height": 6,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 15.0
+            },
+            {
+              "width": 40,
+              "height": 7,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 18.5
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Dvojstranné prevedenie",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        },
+        {
+          "id": "strieska-murova-plocha",
+          "name": "Strieška múrová plochá",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
+          "imageUrl": "/products/strieska_murova_plocha.jpg",
+          "specifications": {
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 20,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 12.5
+            },
+            {
+              "width": 25,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 13.5
+            },
+            {
+              "width": 30,
+              "height": 6,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 15.0
+            },
+            {
+              "width": 40,
+              "height": 7,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 18.5
+            }
+          ],
           "features": [
             "Odolný betónový materiál",
             "Dvojstranné prevedenie",

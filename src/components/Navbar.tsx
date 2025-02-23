@@ -1,88 +1,127 @@
 // src/components/Navbar.tsx
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  // Handle navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
+
+  const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="bg-white shadow-lg p-4">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
-          PLOBET
-        </Link>
+    <nav
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link
+            href="/"
+            className={`text-2xl font-bold transition-colors ${
+              isScrolled ? "text-gray-800" : "text-gray-800"
+            }`}
+          >
+            PLOBET
+          </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
-          <Link href="/" className="hover:text-blue-600 transition-colors">
-            Home
-          </Link>
-          <Link
-            href="/products"
-            className="hover:text-blue-600 transition-colors"
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-1">
+            {[
+              { href: "/", label: "Domov" },
+              { href: "/products", label: "Produkty" },
+              { href: "/contact", label: "Kontakt" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-4 py-2 rounded-md transition-all duration-200 ${
+                  isActive(link.href)
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-100"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden relative w-10 h-10 text-gray-800 rounded-lg"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            Products
-          </Link>
-          <Link
-            href="/contact"
-            className="hover:text-blue-600 transition-colors"
-          >
-            Contact
-          </Link>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span
+                className={`transform transition-all duration-300 ${
+                  isMobileMenuOpen
+                    ? "rotate-45 translate-y-0"
+                    : "-translate-y-2"
+                } block absolute h-0.5 w-6 bg-current`}
+              ></span>
+              <span
+                className={`transform transition-all duration-300 ${
+                  isMobileMenuOpen ? "opacity-0" : "opacity-100"
+                } block absolute h-0.5 w-6 bg-current`}
+              ></span>
+              <span
+                className={`transform transition-all duration-300 ${
+                  isMobileMenuOpen
+                    ? "-rotate-45 translate-y-0"
+                    : "translate-y-2"
+                } block absolute h-0.5 w-6 bg-current`}
+              ></span>
+            </div>
+          </button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        {/* Mobile Navigation */}
+        <div
+          className={`transform transition-all duration-300 ease-in-out md:hidden ${
+            isMobileMenuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-4 pointer-events-none"
+          }`}
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            {isMobileMenuOpen ? (
-              <path d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden mt-4">
-          <div className="flex flex-col space-y-4">
-            <Link
-              href="/"
-              className="hover:text-blue-600 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/products"
-              className="hover:text-blue-600 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Products
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-blue-600 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Contact
-            </Link>
+          <div className="bg-white rounded-lg shadow-lg mt-4 p-4 space-y-3">
+            {[
+              { href: "/", label: "Domov" },
+              { href: "/products", label: "Produkty" },
+              { href: "/contact", label: "Kontakt" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`block px-4 py-2 rounded-md transition-colors ${
+                  isActive(link.href)
+                    ? "bg-blue-500 text-white"
+                    : "hover:bg-gray-100"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

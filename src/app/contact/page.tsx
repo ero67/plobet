@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -13,30 +14,36 @@ export default function ContactPage() {
     "idle" | "sending" | "success" | "error"
   >("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
 
-    // Here you would typically send the email
-    // For now, let's simulate a successful send
-    setTimeout(() => {
+    try {
+      await emailjs.sendForm(
+        "service_pbjs3dn",
+        "template_xvrbu78",
+        e.currentTarget,
+        "V3DVpTPT2UA_ek2gI"
+      );
+
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
-    }, 1000);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setStatus("error");
+    }
   };
 
   return (
     <main className="min-h-screen py-12 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
+        <h1 className="text-4xl font-bold mb-8">Kontaktuj nás</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold mb-6">
-                Our Contact Details
-              </h2>
+              <h2 className="text-2xl font-semibold mb-6">Kontaktné detaily</h2>
 
               <div className="space-y-4">
                 <div className="flex items-center text-gray-600">
@@ -51,15 +58,15 @@ export default function ContactPage() {
 
                 <div className="flex items-center text-gray-600">
                   <MapPin className="h-5 w-5 mr-3 text-blue-600" />
-                  <span>Your Address, Slovakia</span>
+                  <span>Adresa, Slovakia</span>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
+                <h3 className="text-xl font-semibold mb-4">Otváracie hodiny</h3>
                 <div className="space-y-2 text-gray-600">
-                  <p>Monday - Friday: 8:00 - 16:00</p>
-                  <p>Saturday - Sunday: Closed</p>
+                  <p>Pondelok - Piatok;: 8:00 - 16:00</p>
+                  <p>Sobota - Nedeľa: Closed</p>
                 </div>
               </div>
             </div>
@@ -68,16 +75,22 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
+              <h2 className="text-2xl font-semibold mb-6">
+                Pošli nám správu !
+              </h2>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-2">
-                    Name
+                  <label
+                    htmlFor="user_name"
+                    className="block text-gray-700 mb-2"
+                  >
+                    Vaše Meno
                   </label>
                   <input
                     type="text"
-                    id="name"
+                    id="user_name"
+                    name="user_name" // Important for EmailJS
                     required
                     className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     value={formData.name}
@@ -88,12 +101,16 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">
+                  <label
+                    htmlFor="user_email"
+                    className="block text-gray-700 mb-2"
+                  >
                     Email
                   </label>
                   <input
                     type="email"
-                    id="email"
+                    id="user_email"
+                    name="user_email" // Important for EmailJS
                     required
                     className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     value={formData.email}
@@ -105,10 +122,11 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="message" className="block text-gray-700 mb-2">
-                    Message
+                    Správa
                   </label>
                   <textarea
                     id="message"
+                    name="message" // Important for EmailJS
                     required
                     rows={5}
                     className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
