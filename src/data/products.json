@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "id": "concrete-products",
+      "name": "Betónové výrobky",
+      "name_en": "Concrete Products",
+      "products": [
+        {
+          "id": "strieska-murova-dvojstranna",
+          "name": "Strieška múrová dvojstranná",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Dvojstranná betónová strieška na múry, ideálna pre zakrytie a ochranu múrov",
+          "description_en": "Double-sided concrete wall coping, ideal for covering and protecting walls",
+          "imageUrl": "/products/strieska_murova_dvojstranna.jpg",
+          "specifications": {
+            "width": {
+              "value": 30,
+              "unit": "cm",
+              "label": "Šírka/Width"
+            },
+            "length": {
+              "value": 100,
+              "unit": "cm",
+              "label": "Štandardná dĺžka/Standard Length"
+            },
+            "height": {
+              "value": 6,
+              "unit": "cm",
+              "label": "Výška/Height"
+            },
+            "pricePerMeter": {
+              "value": 5,
+              "unit": "€/m",
+              "label": "Cena za meter/Price per meter"
+            }
+          },
+          "features": [
+            "Odolný betónový materiál",
+            "Dvojstranné prevedenie",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        }
+      ]
+    }
+  ]
+}
