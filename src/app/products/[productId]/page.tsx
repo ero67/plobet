@@ -122,9 +122,10 @@ export default function ProductDetailPage({
           {/* Additional Info Placeholder */}
           <div className="mt-12">
             <h2 className="text-2xl font-bold mb-6">Dodatočné informácie</h2>
-            <p className="text-gray-600">
-              {/* Add your additional information here */}
-            </p>
+            {product.id.includes("strieska") && (<p className="text-gray-600">
+              Dĺžky striešok sa dajú prispôsobiť na mieru, avšak v takom prípade
+              sa účtuje príplatok vo výške 20% z ceny.
+            </p>)}
           </div>
           <div className="mt-12 bg-gray-50 rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-6">

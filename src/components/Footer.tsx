@@ -102,10 +102,13 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-400">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p>© {new Date().getFullYear()} PLOBET. Všetky práva vyhradené.</p>
-            <div className="mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
+            <div className="mt-4 md:mt-0 space-x-4">
+              <Link
+                href="/privacy"
+                className="hover:text-white transition-colors"
+              >
                 Ochrana osobných údajov
-              </a>
+              </Link>
             </div>
           </div>
         </div>

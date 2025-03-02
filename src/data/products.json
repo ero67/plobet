@@ -10,7 +10,221 @@
           "name_en": "Double-sided Wall Coping",
           "description": "Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
           "description_en": "Double-sided concrete wall coping",
-          "imageUrl": "/products/strieska_murova_dvojstranna.jpg",
+          "imageUrl": "/products/strieska_murova_dvojstranna_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 22,
+              "height": 4.5,
+              "availableLengths": [270],
+              "pricePerMeter": 9.2
+            },
+            {
+              "width": 25,
+              "height": 5,
+              "availableLengths": [270],
+              "pricePerMeter": 10.1
+            },
+            {
+              "width": 27,
+              "height": 5,
+              "availableLengths": [250],
+              "pricePerMeter": 10.7
+            },
+            {
+              "width": 30,
+              "height": 5,
+              "availableLengths": [270],
+              "pricePerMeter": 11.1
+            },
+            {
+              "width": 32,
+              "height": 6,
+              "availableLengths": [250],
+              "pricePerMeter": 12
+            },
+            {
+              "width": 38,
+              "height": 5,
+              "availableLengths": [200],
+              "pricePerMeter": 14.4
+            },
+            {
+              "width": 42,
+              "height": 6,
+              "availableLengths": [200],
+              "pricePerMeter": 15.5
+            },
+            {
+              "width": 46,
+              "height": 5,
+              "availableLengths": [200],
+              "pricePerMeter": 16.9
+            },
+            {
+              "width": 56,
+              "height": 5.5,
+              "availableLengths": [150],
+              "pricePerMeter": 22.9
+            },
+            {
+              "width": 64,
+              "height": 5,
+              "availableLengths": [150],
+              "pricePerMeter": 26.5
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Spádované do oboch strán",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Drážky zabezpečujúce odkvapkávanie vody"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        },
+        {
+          "id": "strieska-murova-plocha",
+          "name": "Strieška múrová plochá",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
+          "imageUrl": "/products/strieska_murova_plocha_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 20,
+              "height": 4,
+              "availableLengths": [250],
+              "pricePerMeter": 9.5
+            },
+            {
+              "width": 26,
+              "height": 4,
+              "availableLengths": [250],
+              "pricePerMeter": 10.3
+            },
+            {
+              "width": 28,
+              "height": 4,
+              "availableLengths": [250],
+              "pricePerMeter": 10.8
+            },
+            {
+              "width": 32,
+              "height": 4,
+              "availableLengths": [250],
+              "pricePerMeter": 12
+            },
+            {
+              "width": 38,
+              "height": 4,
+              "availableLengths": [220],
+              "pricePerMeter": 15.1
+            },
+            {
+              "width": 46,
+              "height": 4,
+              "availableLengths": [150],
+              "pricePerMeter": 17.4
+            },
+            {
+              "width": 50,
+              "height": 4,
+              "availableLengths": [200],
+              "pricePerMeter": 20.9
+            },
+            {
+              "width": 60,
+              "height": 4,
+              "availableLengths": [150],
+              "pricePerMeter": 26.9
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Drážky zabezpečujúce odkvapkávanie vody"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        },
+        {
+          "id": "strieska-murova-jednostranna",
+          "name": "Strieška múrová jednostranná",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
+          "imageUrl": "/products/strieska_murova_jednostranna_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 38,
+              "height": 5.5,
+              "availableLengths": [220],
+              "pricePerMeter": 16.9
+            },
+            {
+              "width": 40,
+              "height": 6,
+              "availableLengths": [220],
+              "pricePerMeter": 17.6
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Dvojstranné prevedenie"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        }
+      ]
+    },
+    {
+      "id": "concrete-products-hat",
+      "name": "Klobúky na stĺp",
+      "products": [
+        {
+          "id": "klobuk-stlpovy-stvorstranny-a",
+          "name": "Klobúk stĺpový štvorstranný A",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
+          "imageUrl": "/products/klobuk_na_stlp_stvorstranny_a_enhanced.png",
           "specifications": {
             "delivery": {
               "value": 14,
@@ -58,12 +272,12 @@
           "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
         },
         {
-          "id": "strieska-murova-plocha",
-          "name": "Strieška múrová plochá",
+          "id": "klobuk-stlpovy-stvorstranny-b",
+          "name": "Klobúk stĺpový štvorstranný B",
           "name_en": "Double-sided Wall Coping",
-          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description": "",
           "description_en": "Double-sided concrete wall coping",
-          "imageUrl": "/products/strieska_murova_plocha.jpg",
+          "imageUrl": "/products/klobuk_na_stlp_stvorstranny_b_enhanced.png",
           "specifications": {
             "delivery": {
               "value": 14,
@@ -109,6 +323,372 @@
             "Ochrana pred poveternostnými vplyvmi"
           ],
           "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        },
+        {
+          "id": "klobuk-stlpovy-dvojstranny",
+          "name": "Klobúk stĺpový dvojstranný",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
+          "imageUrl": "/products/klobuk_stlopvy_dvojstranny_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 38,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 12.5
+            },
+            {
+              "width": 40,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 13.5
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Spádované do oboch strán",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        },
+        {
+          "id": "klobuk-stlpovy-jednostranny",
+          "name": "Klobúk stĺpový jednostranný",
+          "name_en": "Double-sided Wall Coping",
+          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description_en": "Double-sided concrete wall coping",
+          "imageUrl": "/products/klobuk_stlpovy_jednostranny_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 14,
+              "unit": "dní",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 12.5,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 38,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 12.5
+            },
+            {
+              "width": 40,
+              "height": 5,
+              "availableLengths": [50, 100],
+              "pricePerMeter": 13.5
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Dvojstranné prevedenie",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": ["Záhradné múry", "Oplotenia", "Dekoratívne múry"]
+        }
+      ]
+    },
+
+    {
+      "id": "dlazby-obrubniky",
+      "name": "Dlažby a obrubníky",
+      "products": [
+        {
+          "id": "obrubnik",
+          "name": "Obrubník",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/obrubnik_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 3.75,
+              "height": 21,
+              "availableLengths": [50],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": []
+        },
+        {
+          "id": "odvodnovaci-zlab-maly",
+          "name": "Odvodňovací žľab malý",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/odvodnovaci_zlab_maly_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 25,
+              "height": 8,
+              "availableLengths": [25],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": []
+        },
+        {
+          "id": "odvodnovaci-zlab-velky",
+          "name": "Odvodňovací žľab veľký",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/odvodnovaci_zlab_velky_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 14,
+              "height": 6,
+              "availableLengths": [50],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi"
+          ],
+          "applications": []
+        },
+        {
+          "id": "dlazba-yeti",
+          "name": "Dlažba YETI",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/dlazba_yeti_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 24,
+              "height": 4.5,
+              "availableLengths": [50],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Dekoratívne"
+          ],
+          "applications": []
+        },
+        {
+          "id": "dlazba-terasso-velka",
+          "name": "Dlažba TERASSO veľká",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/dlazba_terasso_velka_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 50,
+              "height": 5,
+              "availableLengths": [50],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Dekoratívne"
+          ],
+          "applications": []
+        },
+        {
+          "id": "dlazba-terasso-mala",
+          "name": "Dlažba TERASSO malá",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/dlazba_terasso_velka_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 30,
+              "height": 3,
+              "availableLengths": [30],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Dekoratívne"
+          ],
+          "applications": []
+        },
+        {
+          "id": "dlazba-protismykova",
+          "name": "Dlažba protišmyková",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/dlazba_protismykova_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 30,
+              "height": 3,
+              "availableLengths": [30],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Dekoratívne"
+          ],
+          "applications": []
+        },
+        {
+          "id": "zatravnovacka",
+          "name": "Zatrávňovačka",
+          "name_en": "Double-sided Wall Coping",
+          "description": "",
+          "description_en": "",
+          "imageUrl": "/products/zatravnovacka_enhanced.png",
+          "specifications": {
+            "delivery": {
+              "value": 0,
+              "unit": "",
+              "label": "Čakacia doba od: "
+            },
+            "price": {
+              "value": 0,
+              "unit": "€/bm",
+              "label": "Cena od: "
+            }
+          },
+          "sizeTable": [
+            {
+              "width": 40,
+              "height": 10,
+              "availableLengths": [60],
+              "pricePerMeter": 0
+            }
+          ],
+          "features": [
+            "Odolný betónový materiál",
+            "Jednoduchá montáž",
+            "Ochrana pred poveternostnými vplyvmi",
+            "Dekoratívne"
+          ],
+          "applications": []
         }
       ]
     }
