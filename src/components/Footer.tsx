@@ -1,6 +1,6 @@
 // src/components/Footer.tsx
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,15 +16,19 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
-                <span>+421 XXX XXX XXX</span>
+                <span>+421 948 550 767 </span>
+              </div>
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 mr-2" />
+                <span>+421 948 534 001</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
-                <span>info@plobet.sk</span>
+                <span>plobet@plobet.sk</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2" />
-                <span>Your Company Address, Slovakia</span>
+                <span>Hlavná 71/28, 044 23 Jasov,Slovensko</span>
               </div>
             </div>
           </div>
@@ -58,7 +62,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h4 className="text-white text-base font-semibold mb-2">
                 Otváracie hodiny
               </h4>
@@ -69,15 +73,14 @@ export default function Footer() {
                   <p>Sobota - Nedeľa: Zatvorené</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Location */}
-          <div>
+          {/* <div>
             <h3 className="text-white text-lg font-semibold mb-4">
               Kde nás nájdete
             </h3>
-            {/* You can replace this with an actual map if you want */}
             <div className="w-full h-48 bg-gray-800 rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=YOUR_MAPS_EMBED_URL"
@@ -92,10 +95,11 @@ export default function Footer() {
             <p className="mt-2 text-sm">
               Nájdete nás na adrese:
               <br />
-              Your Company Address Line 1<br />
-              Your Company Address Line 2
+              Hlavná 71/28
+              <br />
+              044 23 Jasov
             </p>
-          </div>
+          // </div>*/}
         </div>
 
         {/* Bottom Bar */}

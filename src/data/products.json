@@ -6,20 +6,20 @@
       "products": [
         {
           "id": "strieska-murova-dvojstranna",
-          "name": "Strieška múrová dvojstranná",
+          "name": "Strieška múrová dvojspádová",
           "name_en": "Double-sided Wall Coping",
-          "description": "Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description": "Striešky sú vyrobené z vysoko kvalitného mrazuvzdorného betónu. Sú armované betonárskou oceľou a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
           "description_en": "Double-sided concrete wall coping",
           "imageUrl": "/products/strieska_murova_dvojstranna_enhanced.png",
           "specifications": {
             "delivery": {
               "value": 14,
               "unit": "dní",
-              "label": "Čakacia doba od: "
+              "label": "Čakacia doba pre inú ako štandardnú dĺžku od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
+              "value": 9.2,
+              "unit": "€/m",
               "label": "Cena od: "
             }
           },
@@ -173,7 +173,7 @@
         },
         {
           "id": "strieska-murova-jednostranna",
-          "name": "Strieška múrová jednostranná",
+          "name": "Strieška múrová jednospádová",
           "name_en": "Double-sided Wall Coping",
           "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
           "description_en": "Double-sided concrete wall coping",
@@ -222,7 +222,7 @@
           "id": "klobuk-stlpovy-stvorstranny-a",
           "name": "Klobúk stĺpový štvorstranný A",
           "name_en": "Double-sided Wall Coping",
-          "description": "Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description": "Betónové klobúky sa používajú na zakrytie plotových stĺpikov .Na spodnej časti klobúka sú narezané drážky na odkvapkávanie vody.",
           "description_en": "Double-sided concrete wall coping",
           "imageUrl": "/products/klobuk_na_stlp_stvorstranny_a_enhanced.png",
           "specifications": {
@@ -328,7 +328,7 @@
           "id": "klobuk-stlpovy-dvojstranny",
           "name": "Klobúk stĺpový dvojstranný",
           "name_en": "Double-sided Wall Coping",
-          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description": "Klobúky sú vyrobené z vysoko kvalitného mrazuvzdorného betónu. Na spodnej časti sa nachádzajú žliabky na odkvapkávanie vody",
           "description_en": "Double-sided concrete wall coping",
           "imageUrl": "/products/klobuk_stlopvy_dvojstranny_enhanced.png",
           "specifications": {
@@ -345,16 +345,64 @@
           },
           "sizeTable": [
             {
-              "width": 38,
-              "height": 5,
-              "availableLengths": [50, 100],
-              "pricePerMeter": 12.5
+              "width": 22,
+              "height": 4.5,
+              "availableLengths": [57],
+              "pricePerMeter": 6.3
             },
             {
-              "width": 40,
+              "width": 25,
               "height": 5,
-              "availableLengths": [50, 100],
-              "pricePerMeter": 13.5
+              "availableLengths": [57],
+              "pricePerMeter": 7
+            },
+            {
+              "width": 27,
+              "height": 5,
+              "availableLengths": [57],
+              "pricePerMeter": 7.4
+            },
+            {
+              "width": 30,
+              "height": 5,
+              "availableLengths": [57],
+              "pricePerMeter": 7.6
+            },
+            {
+              "width": 32,
+              "height": 6,
+              "availableLengths": [57],
+              "pricePerMeter": 8.3
+            },
+            {
+              "width": 38,
+              "height": 5,
+              "availableLengths": [57],
+              "pricePerMeter": 9.9
+            },
+            {
+              "width": 42,
+              "height": 6,
+              "availableLengths": [57],
+              "pricePerMeter": 10.7
+            },
+            {
+              "width": 46,
+              "height": 5,
+              "availableLengths": [57],
+              "pricePerMeter": 11.6
+            },
+            {
+              "width": 56,
+              "height": 5.5,
+              "availableLengths": [57],
+              "pricePerMeter": 15.7
+            },
+            {
+              "width": 64,
+              "height": 5,
+              "availableLengths": [57],
+              "pricePerMeter": 18.2
             }
           ],
           "features": [
@@ -644,41 +692,6 @@
               "width": 30,
               "height": 3,
               "availableLengths": [30],
-              "pricePerMeter": 0
-            }
-          ],
-          "features": [
-            "Odolný betónový materiál",
-            "Jednoduchá montáž",
-            "Ochrana pred poveternostnými vplyvmi",
-            "Dekoratívne"
-          ],
-          "applications": []
-        },
-        {
-          "id": "zatravnovacka",
-          "name": "Zatrávňovačka",
-          "name_en": "Double-sided Wall Coping",
-          "description": "",
-          "description_en": "",
-          "imageUrl": "/products/zatravnovacka_enhanced.png",
-          "specifications": {
-            "delivery": {
-              "value": 0,
-              "unit": "",
-              "label": "Čakacia doba od: "
-            },
-            "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
-            }
-          },
-          "sizeTable": [
-            {
-              "width": 40,
-              "height": 10,
-              "availableLengths": [60],
               "pricePerMeter": 0
             }
           ],

@@ -6,14 +6,16 @@ import { notFound } from "next/navigation";
 import type { Product } from "@/types/product";
 import ContactForm from "@/components/ContactForm";
 import { Phone } from "lucide-react";
-export default function ProductDetailPage({
+export default async function ProductDetailPage({
   params,
 }: {
   params: { productId: string };
 }) {
+  const productId = params.productId;
+
   const product = productsData.categories
     .flatMap((category) => category.products)
-    .find((p) => p.id === params.productId) as Product | undefined;
+    .find((p) => p.id === productId) as Product | undefined;
 
   if (!product) {
     notFound();
@@ -67,7 +69,7 @@ export default function ProductDetailPage({
                     <th className="border p-3 text-left">Šírka (cm)</th>
                     <th className="border p-3 text-left">Výška (cm)</th>
                     <th className="border p-3 text-left">
-                      Dostupné dĺžky (cm)
+                      Štandardné dĺžky (cm)
                     </th>
                     <th className="border p-3 text-left">Cena za meter</th>
                   </tr>
@@ -88,10 +90,6 @@ export default function ProductDetailPage({
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-gray-600 mt-4">
-              * Ceny sú uvedené bez DPH. Pre presnú cenovú ponuku nás
-              kontaktujte.
-            </p>
           </div>
 
           {/* Features */}
@@ -122,10 +120,18 @@ export default function ProductDetailPage({
           {/* Additional Info Placeholder */}
           <div className="mt-12">
             <h2 className="text-2xl font-bold mb-6">Dodatočné informácie</h2>
-            {product.id.includes("strieska") && (<p className="text-gray-600">
-              Dĺžky striešok sa dajú prispôsobiť na mieru, avšak v takom prípade
-              sa účtuje príplatok vo výške 20% z ceny.
-            </p>)}
+            {product.id.includes("strieska") && (
+              <p className="text-gray-600">
+                Dĺžky striešok sa dajú prispôsobiť na mieru, avšak v takom
+                prípade sa účtuje príplatok vo výške 20% z ceny.
+              </p>
+            )}
+            {product.id.includes("klobuk") && (
+              <p className="text-gray-600">
+                Po dohode je možné dĺžky klobúkov upraviť na vami žiadaný
+                rozmer.
+              </p>
+            )}
           </div>
           <div className="mt-12 bg-gray-50 rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-6">
@@ -142,11 +148,15 @@ export default function ProductDetailPage({
             </h3>
           </div>
           <div className="mt-4 space-y-2">
-            <p className="text-blue-800">
-              Pracovné dni: <span className="font-semibold">8:00 - 16:00</span>
-            </p>
+            <p className="text-blue-800"></p>
             <p className="text-lg font-semibold text-blue-900">
-              +421 XXX XXX XXX
+              +421 948 550 767
+            </p>
+          </div>
+          <div className="mt-4 space-y-2">
+            <p className="text-blue-800"></p>
+            <p className="text-lg font-semibold text-blue-900">
+              +421 948 534 001
             </p>
           </div>
         </div>

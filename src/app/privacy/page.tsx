@@ -20,11 +20,11 @@ export default function PrivacyPolicyPage() {
             <p className="text-gray-700 mt-2">
               Kontaktné údaje prevádzkovateľa:
               <br />
-              Adresa: [DOPLŇTE ADRESU]
+              Adresa: Hlavná 71/28, 044 23 Jasov,Slovensko
               <br />
               Email: info@plobet.sk
               <br />
-              Telefón: [DOPLŇTE TELEFÓN]
+              Telefón: +421 948 550 767, +421 948 534 001
             </p>
           </section>
 
@@ -131,8 +131,7 @@ export default function PrivacyPolicyPage() {
               Aktuálna verzia podmienok je vždy zverejnená na tejto stránke.
             </p>
             <p className="text-gray-700 mt-2">
-              Táto Ochrana osobných údajov nadobúda účinnosť dňom [DOPLŇTE
-              DÁTUM].
+              Táto Ochrana osobných údajov nadobúda účinnosť dňom 6.4.2025.
             </p>
           </section>
         </div>

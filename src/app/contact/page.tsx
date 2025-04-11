@@ -48,25 +48,20 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div className="flex items-center text-gray-600">
                   <Phone className="h-5 w-5 mr-3 text-blue-600" />
-                  <span>+421 XXX XXX XXX</span>
+                  <span>+421 948 550 767 </span>
                 </div>
-
+                <div className="flex items-center text-gray-600">
+                  <Phone className="h-5 w-5 mr-3 text-blue-600" />
+                  <span>+421 948 534 001 </span>
+                </div>
                 <div className="flex items-center text-gray-600">
                   <Mail className="h-5 w-5 mr-3 text-blue-600" />
-                  <span>info@plobet.sk</span>
+                  <span>plobet@plobet.sk</span>
                 </div>
 
                 <div className="flex items-center text-gray-600">
                   <MapPin className="h-5 w-5 mr-3 text-blue-600" />
-                  <span>Adresa, Slovakia</span>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">Otváracie hodiny</h3>
-                <div className="space-y-2 text-gray-600">
-                  <p>Pondelok - Piatok;: 8:00 - 16:00</p>
-                  <p>Sobota - Nedeľa: Closed</p>
+                  <span>Hlavná 71/28, 044 23 Jasov, Slovensko</span>
                 </div>
               </div>
             </div>
