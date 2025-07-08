@@ -9,9 +9,9 @@ import { Phone } from "lucide-react";
 export default async function ProductDetailPage({
   params,
 }: {
-  params: { productId: string };
+  params: Promise<{ productId: string }>;
 }) {
-  const productId = params.productId;
+  const { productId } = await params;
 
   const product = productsData.categories
     .flatMap((category) => category.products)
