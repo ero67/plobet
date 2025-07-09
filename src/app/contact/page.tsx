@@ -137,17 +137,15 @@ export default function ContactPage() {
                   disabled={status === "sending"}
                   className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors disabled:bg-blue-400"
                 >
-                  {status === "sending" ? "Sending..." : "Send Message"}
+                  {status === "sending" ? "Odosiela sa..." : "Poslať správu"}
                 </button>
 
                 {status === "success" && (
-                  <p className="text-green-600 mt-2">
-                    Message sent successfully!
-                  </p>
+                  <p className="text-green-600 mt-2">Správa bola odoslaná !</p>
                 )}
                 {status === "error" && (
                   <p className="text-red-600 mt-2">
-                    Failed to send message. Please try again.
+                    Správu sa nepodarilo odoslať, skúste znovu !
                   </p>
                 )}
               </form>
