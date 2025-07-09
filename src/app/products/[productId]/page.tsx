@@ -61,7 +61,7 @@ export default async function ProductDetailPage({
 
           {/* Size Table */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold mb-6">Dostupné rozmery a ceny</h2>
+            <h2 className="text-2xl font-bold mb-6">Dostupné rozmery</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
@@ -71,7 +71,7 @@ export default async function ProductDetailPage({
                     <th className="border p-3 text-left">
                       Štandardné dĺžky (cm)
                     </th>
-                    <th className="border p-3 text-left">Cena za meter</th>
+                    {/* <th className="border p-3 text-left">Cena za meter</th> */}
                   </tr>
                 </thead>
                 <tbody>
@@ -82,9 +82,9 @@ export default async function ProductDetailPage({
                       <td className="border p-3">
                         {size.availableLengths.join(" / ")}
                       </td>
-                      <td className="border p-3">
+                      {/* <td className="border p-3">
                         {size.pricePerMeter.toFixed(2)} €/m
-                      </td>
+                      </td> */}
                     </tr>
                   ))}
                 </tbody>

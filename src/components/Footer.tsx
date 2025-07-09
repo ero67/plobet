@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">PLOBET</h3>
             <p className="text-gray-400 mb-4">
-              Váš spoľahlivý partner pre betónové výrobky od roku XXXX
+              Váš spoľahlivý partner pre betónové výrobky od roku 1995
             </p>
             <div className="space-y-2">
               <div className="flex items-center">

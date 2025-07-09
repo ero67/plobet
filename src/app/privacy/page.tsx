@@ -61,9 +61,7 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p className="text-gray-700">
               Osobné údaje uchovávame po dobu potrebnú na splnenie účelu, pre
-              ktorý boli získané, zvyčajne po dobu trvania komunikácie a
-              následne ešte 3 roky po jej ukončení z dôvodu oprávneného záujmu
-              prevádzkovateľa.
+              ktorý boli získané, zvyčajne po dobu trvania komunikácie.
             </p>
           </section>
 
@@ -93,7 +91,7 @@ export default function PrivacyPolicyPage() {
               <li>Právo na opravu osobných údajov</li>
               <li>Právo na obmedzenie spracúvania</li>
               <li>Právo namietať proti spracúvaniu</li>
-              <li>Právo na výmaz osobných údajov</li>
+              <li>Právo na vymazanie osobných údajov</li>
               <li>Právo na prenosnosť údajov</li>
               <li>
                 Právo odvolať súhlas so spracovaním písomne alebo elektronicky

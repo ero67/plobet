@@ -17,7 +17,7 @@ const topProducts = [
   },
   {
     id: 3,
-    name: "Vybroliata dlažba a obrubníky",
+    name: "Vibroliata dlažba a obrubníky",
     description:
       "Ponúkame množstvo rôznych druhov dlažieb s rôznymi vzormi a rozmermy a obrubníky, ktoré vylepšia vzhľad vášho domova.",
     image: "/products/dlazba_terasso_velka_enhanced.png",

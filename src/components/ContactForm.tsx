@@ -12,6 +12,8 @@ export default function ContactForm({ productName }: ContactFormProps) {
     "idle" | "sending" | "success" | "error"
   >("idle");
 
+  const [checkedGDPR, setCheckedGDPR] = useState<boolean>(false);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
@@ -101,10 +103,27 @@ export default function ContactForm({ productName }: ContactFormProps) {
           className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
+      <div className="text-sm text-gray-600">
+        <input
+          type="checkbox"
+          checked={checkedGDPR}
+          onChange={(e) => setCheckedGDPR(e.target.checked)}
+          className="mr-2"
+        />
+        Súhlasím so spracovaním mojich osobných údajov na účely kontaktovania a
+        odpovede na moju požiadavku v súlade s našimi{" "}
+        <a
+          href="/privacy"
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          zásadami ochrany osobných údajov
+        </a>
+        .
+      </div>
 
       <button
         type="submit"
-        disabled={status === "sending"}
+        disabled={status === "sending" || !checkedGDPR}
         className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors disabled:bg-blue-400"
       >
         {status === "sending" ? "Odosielam..." : "Odoslať správu"}

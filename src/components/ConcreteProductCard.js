@@ -14,11 +14,11 @@ const ConcreteProductCard = ({ product }) => {
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+        <h3 className="text-xl font-semibold mb-4">{product.name}</h3>
         {/* <p className="text-gray-600 mb-4">{product.description}</p> */}
 
         {/* Specifications Table */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <h4 className="font-semibold mb-2">Technické parametre:</h4>
           <div className="bg-gray-50 rounded-lg p-4">
             {Object.entries(product.specifications).map(([key, spec]) => (
@@ -33,7 +33,7 @@ const ConcreteProductCard = ({ product }) => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Features */}
         {product.features && (
