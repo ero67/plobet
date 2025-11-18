@@ -18,9 +18,8 @@
               "label": "Čakacia doba pre inú ako štandardnú dĺžku od: "
             },
             "price": {
-              "value": 9.2,
-              "unit": "€/m",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -108,9 +107,8 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -185,9 +183,8 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -232,35 +229,28 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
             {
-              "width": 20,
+              "width": 30,
               "height": 5,
-              "availableLengths": [50, 100],
+              "availableLengths": [30],
               "pricePerMeter": 12.5
             },
             {
-              "width": 25,
-              "height": 5,
-              "availableLengths": [50, 100],
+              "width": 39,
+              "height": 6.5,
+              "availableLengths": [39],
               "pricePerMeter": 13.5
             },
             {
-              "width": 30,
-              "height": 6,
-              "availableLengths": [50, 100],
+              "width": 49,
+              "height": 6.5,
+              "availableLengths": [49],
               "pricePerMeter": 15.0
-            },
-            {
-              "width": 40,
-              "height": 7,
-              "availableLengths": [50, 100],
-              "pricePerMeter": 18.5
             }
           ],
           "features": [
@@ -285,35 +275,16 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
             {
-              "width": 20,
-              "height": 5,
-              "availableLengths": [50, 100],
+              "width": 47,
+              "height": 4.5,
+              "availableLengths": [27],
               "pricePerMeter": 12.5
-            },
-            {
-              "width": 25,
-              "height": 5,
-              "availableLengths": [50, 100],
-              "pricePerMeter": 13.5
-            },
-            {
-              "width": 30,
-              "height": 6,
-              "availableLengths": [50, 100],
-              "pricePerMeter": 15.0
-            },
-            {
-              "width": 40,
-              "height": 7,
-              "availableLengths": [50, 100],
-              "pricePerMeter": 18.5
             }
           ],
           "features": [
@@ -338,9 +309,8 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -417,7 +387,7 @@
           "id": "klobuk-stlpovy-jednostranny",
           "name": "Klobúk stĺpový jednostranný",
           "name_en": "Double-sided Wall Coping",
-          "description": "Plochá betónová strieška na múry. Striešky sú armované a na spodnej strane majú zarezané žliabky na odkvapkávanie vody. Uvádzané dĺžky sú vyrábané štandardne. Po dohode je možné vyrobiť striešky na mieru. Čakacia doba je od 14 dní podľa objednaného množstva. Po dohode je možné vyrobiť striešky s dierami pre stĺpiky na upevnenie pletiva.",
+          "description": "Klobúky sú vyrobené z vysoko kvalitného mrazuvzdorného betónu. Na spodnej časti sa nachádzajú žliabky na odkvapkávanie vody.",
           "description_en": "Double-sided concrete wall coping",
           "imageUrl": "/products/klobuk_stlpovy_jednostranny_enhanced.png",
           "specifications": {
@@ -427,9 +397,8 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 12.5,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -470,14 +439,13 @@
           "imageUrl": "/products/obrubnik_enhanced.png",
           "specifications": {
             "delivery": {
-              "value": 0,
+              "value": "Záleží na objednanom množstve",
               "unit": "",
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -486,11 +454,16 @@
               "height": 21,
               "availableLengths": [50],
               "pricePerMeter": 0
+            },
+            {
+              "width": 7,
+              "height": 21,
+              "availableLengths": [50],
+              "pricePerMeter": 0
             }
           ],
           "features": [
             "Odolný betónový materiál",
-            "Jednoduchá montáž",
             "Ochrana pred poveternostnými vplyvmi"
           ],
           "applications": []
@@ -504,28 +477,34 @@
           "imageUrl": "/products/odvodnovaci_zlab_maly_enhanced.png",
           "specifications": {
             "delivery": {
-              "value": 0,
+              "value": "Záleží na objednanom množstve",
               "unit": "",
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
             {
               "width": 25,
+              "height": 8.5,
+              "availableLengths": [35],
+              "pricePerMeter": 0
+            },
+            {
+              "width": 16,
               "height": 8,
-              "availableLengths": [25],
+              "availableLengths": [26],
               "pricePerMeter": 0
             }
           ],
           "features": [
             "Odolný betónový materiál",
-            "Jednoduchá montáž",
-            "Ochrana pred poveternostnými vplyvmi"
+            "Ochrana pred poveternostnými vplyvmi",
+            "Slúži na odvádzanie dažďovej vody"
+
           ],
           "applications": []
         },
@@ -538,28 +517,33 @@
           "imageUrl": "/products/odvodnovaci_zlab_velky_enhanced.png",
           "specifications": {
             "delivery": {
-              "value": 0,
+              "value": "Záleží na objednanom množstve",
               "unit": "",
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
             {
-              "width": 14,
+              "width": 16,
               "height": 6,
               "availableLengths": [50],
+              "pricePerMeter": 0
+            },
+            {
+              "width": 20,
+              "height": 8,
+              "availableLengths": [100],
               "pricePerMeter": 0
             }
           ],
           "features": [
             "Odolný betónový materiál",
-            "Jednoduchá montáž",
-            "Ochrana pred poveternostnými vplyvmi"
+            "Ochrana pred poveternostnými vplyvmi",
+            "Slúži na odvádzanie dažďovej vody"
           ],
           "applications": []
         },
@@ -572,14 +556,13 @@
           "imageUrl": "/products/dlazba_yeti_enhanced.png",
           "specifications": {
             "delivery": {
-              "value": 0,
+              "value": "Záleží na objednanom množstve",
               "unit": "",
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -612,16 +595,27 @@
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
             {
+              "width": 40,
+              "height": 5,
+              "availableLengths": [40],
+              "pricePerMeter": 0
+            },
+            {
               "width": 50,
               "height": 5,
               "availableLengths": [50],
+              "pricePerMeter": 0
+            },
+            {
+              "width": 55,
+              "height": 6,
+              "availableLengths": [55],
               "pricePerMeter": 0
             }
           ],
@@ -642,14 +636,13 @@
           "imageUrl": "/products/dlazba_terasso_velka_enhanced.png",
           "specifications": {
             "delivery": {
-              "value": 0,
+              "value": "Záleží na objednanom množstve",
               "unit": "",
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [
@@ -677,14 +670,13 @@
           "imageUrl": "/products/dlazba_protismykova_enhanced.png",
           "specifications": {
             "delivery": {
-              "value": 0,
+              "value": "Záleží na objednanom množstve",
               "unit": "",
               "label": "Čakacia doba od: "
             },
             "price": {
-              "value": 0,
-              "unit": "€/bm",
-              "label": "Cena od: "
+              "value": "Cenník zašleme na vyžiadanie",
+              "label": "Cena: "
             }
           },
           "sizeTable": [

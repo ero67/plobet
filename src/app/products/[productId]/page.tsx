@@ -1,11 +1,18 @@
 // src/app/products/[productId]/page.tsx
 import Image from "next/image";
 import Link from "next/link";
-import productsData from "@/data/products.json";
+import productsDataRaw from "@/data/products.json";
 import { notFound } from "next/navigation";
 import type { Product } from "@/types/product";
 import ContactForm from "@/components/ContactForm";
 import { Phone } from "lucide-react";
+
+const productsData = productsDataRaw as {
+  categories: Array<{
+    products: Product[];
+  }>;
+};
+
 export default async function ProductDetailPage({
   params,
 }: {
@@ -13,9 +20,10 @@ export default async function ProductDetailPage({
 }) {
   const { productId } = await params;
 
-  const product = productsData.categories
-    .flatMap((category) => category.products)
-    .find((p) => p.id === productId) as Product | undefined;
+  const allProducts = productsData.categories.flatMap(
+    (category) => category.products
+  );
+  const product = allProducts.find((p) => p.id === productId);
 
   if (!product) {
     notFound();
@@ -47,14 +55,17 @@ export default async function ProductDetailPage({
               <p className="text-gray-600 mb-6">{product.description}</p>
               {/* Basic specifications */}
               <div className="bg-gray-50 rounded-lg p-4">
-                {Object.entries(product.specifications).map(([key, spec]) => (
-                  <div key={key} className="grid grid-cols-2 gap-4 py-2">
-                    <span className="text-gray-600">{spec.label}</span>
-                    <span className="font-medium">
-                      {spec.value} {spec.unit}
-                    </span>
-                  </div>
-                ))}
+                {Object.entries(product.specifications).map(([key, spec]) => {
+                  if (!spec) return null;
+                  return (
+                    <div key={key} className="grid grid-cols-2 gap-4 py-2">
+                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="font-medium">
+                        {spec.value} {spec.unit ? spec.unit : ""}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -66,11 +77,13 @@ export default async function ProductDetailPage({
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-gray-50">
-                    <th className="border p-3 text-left">Šírka (cm)</th>
-                    <th className="border p-3 text-left">Výška (cm)</th>
-                    <th className="border p-3 text-left">
-                      Štandardné dĺžky (cm)
+                  <th className="border p-3 text-left">
+                      {product.id === "obrubnik"
+                        ? "Hrúbka (cm)"
+                        : "Šírka (cm)"}
                     </th>
+                    <th className="border p-3 text-left">{product.id.includes("dlazba") ? "Hrúbka (cm)" : "Výška (cm)"}</th>
+                    <th className="border p-3 text-left">Dĺžka (cm)</th>
                     {/* <th className="border p-3 text-left">Cena za meter</th> */}
                   </tr>
                 </thead>
@@ -123,10 +136,10 @@ export default async function ProductDetailPage({
             {product.id.includes("strieska") && (
               <p className="text-gray-600">
                 Dĺžky striešok sa dajú prispôsobiť na mieru, avšak v takom
-                prípade sa účtuje príplatok vo výške 20% z ceny.
+                prípade sa účtuje príplatok vo výške 10% z ceny.
               </p>
             )}
-            {product.id.includes("klobuk") && (
+            {product.id.includes("klobuk") && product.id !== "klobuk-stlpovy-stvorstranny-a" && product.id !== "klobuk-stlpovy-stvorstranny-b" && (
               <p className="text-gray-600">
                 Po dohode je možné dĺžky klobúkov upraviť na vami žiadaný
                 rozmer.

@@ -3,7 +3,7 @@ import Image from "next/image";
 const topProducts = [
   {
     id: 1,
-    name: "Betónová strieška",
+    name: "Betónové striešky na múriky",
     description:
       "Ako jedna z mála firiem na trhu ponúkame dĺžky až 270 cm na kus.",
     image: "/products/strieska_murova_dvojstranna_enhanced.png",
