@@ -1,9 +1,18 @@
 // src/app/products/page.tsx
 "use client";
 import { useState } from "react";
-import productsData from "@/data/products.json";
+import productsDataRaw from "@/data/products.json";
 import ConcreteProductCard from "@/components/ConcreteProductCard";
 import CategoryFilter from "@/components/CategoryFilter";
+import type { Product } from "@/types/product";
+
+const productsData = productsDataRaw as {
+  categories: Array<{
+    id: string;
+    name: string;
+    products: Product[];
+  }>;
+};
 
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState("all");
