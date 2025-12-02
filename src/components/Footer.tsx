@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
-                <span>plobet@plobet.sk</span>
+                <span>plobetsro@gmail.sk</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2" />
