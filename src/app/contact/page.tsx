@@ -56,7 +56,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Mail className="h-5 w-5 mr-3 text-blue-600" />
-                  <span>plobetsro@gmail.sk</span>
+                  <span>plobetsro@gmail.com</span>
                 </div>
 
                 <div className="flex items-center text-gray-600">
